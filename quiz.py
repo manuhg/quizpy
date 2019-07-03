@@ -67,11 +67,11 @@ class Quiz:
             print(q[0],'marks:',q[1])
 
     def past_results(self,user,nq=None):
-        print('\n=========================================\nResults\n=========================================')
+        print('\n=========================================\nResults')
         if nq is None:
              nq = len(user['quizzes'])
              nd = nq
-             print('You have previosuly attempted ',nq,'times')
+             print('\nYou have previosuly attempted ',nq,'times')
              if nq>1:
                  nd = get_int_input('How many past attempts do you want to see? ')
                  nq = nd
@@ -80,7 +80,7 @@ class Quiz:
             print('\n=========================')
             self.print_result(q)
             print('\n=========================')
-        print('\n=========================================\nResults\n=========================================')
+        print('\n=========================================')
         
         
 def main():
